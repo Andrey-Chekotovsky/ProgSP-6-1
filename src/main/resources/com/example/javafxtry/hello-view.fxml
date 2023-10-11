@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxtry.Controllers.ScreenController">
+   <children>
+      <Button fx:id="enterButton" layoutX="300.0" layoutY="135.0" mnemonicParsing="false" onAction="#enter" prefHeight="26.0" prefWidth="46.0" text="Enter" />
+      <Label layoutX="48.0" layoutY="5.0" prefHeight="18.0" prefWidth="170.0" style="-fx-background-color: GREY;" text="Фамилия" textFill="WHITE" />
+      <CheckBox fx:id="firstNameCheck" layoutX="218.0" layoutY="168.0" mnemonicParsing="false" onAction="#changeFilter" text="Сортировать по имени" />
+      <CheckBox fx:id="lastNameCheck" layoutX="41.0" layoutY="168.0" mnemonicParsing="false" onAction="#changeFilter" text="Сортировать по фамилии" />
+      <CheckBox fx:id="patronymicCheck" layoutX="380.0" layoutY="168.0" mnemonicParsing="false" onAction="#changeFilter" text="Сортировать по отчеству" />
+      <TextField fx:id="secondNameField" layoutX="48.0" layoutY="25.0" prefHeight="26.0" prefWidth="226.0" />
+      <ListView fx:id="secondNameList" layoutX="48.0" layoutY="186.0" prefHeight="200.0" prefWidth="150.0" />
+      <ListView fx:id="firstNameList" layoutX="198.0" layoutY="186.0" prefHeight="200.0" prefWidth="150.0" />
+      <ListView fx:id="patronymicList" layoutX="349.0" layoutY="186.0" prefHeight="200.0" prefWidth="150.0" />
+      <TextField fx:id="firstNameField" layoutX="48.0" layoutY="77.0" prefHeight="26.0" prefWidth="226.0" />
+      <TextField fx:id="patronymicField" layoutX="48.0" layoutY="135.0" prefHeight="26.0" prefWidth="226.0" />
+      <Label layoutX="48.0" layoutY="55.0" prefHeight="18.0" prefWidth="170.0" style="-fx-background-color: GREY;" text="Имя" textFill="WHITE" />
+      <Label layoutX="48.0" layoutY="110.0" prefHeight="18.0" prefWidth="170.0" style="-fx-background-color: GREY;" text="Отчествоо" textFill="WHITE" />
+   </children>
+</AnchorPane>
